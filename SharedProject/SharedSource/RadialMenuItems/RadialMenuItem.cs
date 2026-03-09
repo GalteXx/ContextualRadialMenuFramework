@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 
 namespace RadialMenu
 {
-    internal class RadialMenuItem(string label, Sprite icon, bool isEnabled) : IRadialMenuItem
+    public class RadialMenuItem(string label, Sprite icon, bool isEnabled) : IRadialMenuItem
     {
         private string _label = label;
         private Sprite _icon = icon;

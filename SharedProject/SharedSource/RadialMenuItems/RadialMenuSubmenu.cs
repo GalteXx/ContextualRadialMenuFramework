@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 
 namespace SharedProject.SharedSource.RadialMenuItems
 {
-    internal class RadialMenuSubmenu : IRadialMenuItem
+    public class RadialMenuSubmenu : IRadialMenuItem
     {
         private Sprite _icon;
         private string _label;

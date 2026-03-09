@@ -9,6 +9,9 @@
     <Import_RootNamespace>SharedProject</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)SharedSource\Context\RadialMenuContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SharedSource\Context\RadialMenuContextManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SharedSource\RadialMenu.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SharedSource\RadialMenuItems\IRadialMenuItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SharedSource\Plugin.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SharedSource\RadialMenuItems\RadialMenuItem.cs" />
