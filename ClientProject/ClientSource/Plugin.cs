@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Barotrauma;
 
-namespace MyModName
+namespace RadialMenu
 {
-    public partial class Plugin : IAssemblyPlugin
+    public partial class RadialMenuPlugin : IAssemblyPlugin
     {
         // Client-specific code
     }

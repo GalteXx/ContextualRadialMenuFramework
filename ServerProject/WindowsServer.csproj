@@ -55,7 +55,7 @@
   </ItemGroup>
 
   <PropertyGroup>
-    <RootNamespace>RadlialMenu</RootNamespace>
+    <RootNamespace>RadialMenu</RootNamespace>
     <PlatformTarget>x64</PlatformTarget>
     <GenerateDocumentationFile>False</GenerateDocumentationFile>
   </PropertyGroup>

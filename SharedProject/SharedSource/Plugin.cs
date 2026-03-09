@@ -5,25 +5,26 @@ using System.Text;
 using Barotrauma;
 
 using System.Runtime.CompilerServices;
+using Microsoft.Xna.Framework;
 [assembly: IgnoresAccessChecksTo("Barotrauma")]
 [assembly: IgnoresAccessChecksTo("DedicatedServer")]
 [assembly: IgnoresAccessChecksTo("BarotraumaCore")]
 
-namespace MyModName
+namespace RadialMenu
 {
-    public partial class Plugin : IAssemblyPlugin
+    public partial class RadialMenuPlugin : IAssemblyPlugin
     {
         public void Initialize()
         {
-            // When your plugin is loading, use this instead of the constructor
-            // Put any code here that does not rely on other plugins.
-            throw new NotImplementedException();
+
         }
 
         public void OnLoadCompleted()
         {
+            DebugConsole.NewMessage("CRMF loaded");
             // After all plugins have loaded
             // Put code that interacts with other plugins here.
+            
         }
 
         public void PreInitPatching()
