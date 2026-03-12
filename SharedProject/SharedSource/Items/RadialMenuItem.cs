@@ -2,15 +2,15 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace RadialMenu
+namespace RadialMenu.Items
 {
-    public class RadialMenuItem(string label, Sprite icon, bool isEnabled) : IRadialMenuItem
+    public class RadialMenuItem(string label, Sprite? icon, bool isEnabled) : IRadialMenuItem
     {
         private string _label = label;
-        private Sprite _icon = icon;
+        private Sprite? _icon = icon;
         private bool _isEnabled = isEnabled;
 
-        public Sprite Icon
+        public Sprite? Icon
         {
             get => _icon;
             set

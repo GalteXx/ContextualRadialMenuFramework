@@ -1,8 +1,11 @@
-﻿namespace RadialMenu
+﻿using RadialMenu.Context;
+using RadialMenu.Items;
+
+namespace RadialMenu
 {
-    internal class RadialMenu
+    internal sealed class RadialMenu
     {
-        public RadialMenuContext CurrentContext { get; private set; }
+        public RadialMenuContext? CurrentContext { get; private set; }
 
 
 

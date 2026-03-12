@@ -1,6 +1,6 @@
 ﻿using Barotrauma;
 
-namespace RadialMenu
+namespace RadialMenu.Context
 {
     internal class RadialMenuContextManager
     {

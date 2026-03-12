@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.Immutable;
-using System.Text;
-using Barotrauma;
+﻿using Barotrauma;
 
 using System.Runtime.CompilerServices;
-using Microsoft.Xna.Framework;
+using SharedProject.SharedSource;
 [assembly: IgnoresAccessChecksTo("Barotrauma")]
 [assembly: IgnoresAccessChecksTo("DedicatedServer")]
 [assembly: IgnoresAccessChecksTo("BarotraumaCore")]
@@ -14,17 +10,20 @@ namespace RadialMenu
 {
     public partial class RadialMenuPlugin : IAssemblyPlugin
     {
+        private CommandsHandler _commandsHandler;
+
         public void Initialize()
         {
-            
         }
 
         public void OnLoadCompleted()
         {
             DebugConsole.NewMessage("CRMF loaded");
+            _commandsHandler = new();
+            _commandsHandler.RegisterCommands();
             // After all plugins have loaded
             // Put code that interacts with other plugins here.
-            
+
         }
 
         public void PreInitPatching()

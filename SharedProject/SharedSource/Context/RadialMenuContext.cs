@@ -1,7 +1,8 @@
 ﻿using Barotrauma;
+using RadialMenu.Items;
 using System.Collections.ObjectModel;
 
-namespace RadialMenu
+namespace RadialMenu.Context
 {
     public class RadialMenuContext
     {

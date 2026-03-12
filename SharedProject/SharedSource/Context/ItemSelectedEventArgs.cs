@@ -1,4 +1,4 @@
-﻿namespace RadialMenu
+﻿namespace RadialMenu.Items
 {
     public class ItemSelectedEventArgs : EventArgs
     {

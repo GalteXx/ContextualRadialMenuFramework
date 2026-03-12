@@ -4,15 +4,15 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace SharedProject.SharedSource.RadialMenuItems
+namespace RadialMenu.Items
 {
     public class RadialMenuSubmenu : IRadialMenuItem
     {
-        private Sprite _icon;
+        private Sprite? _icon;
         private string _label;
         private bool _isEnabled;
 
-        public RadialMenuSubmenu(Sprite icon, string label, bool isEnabled, IEnumerable<IRadialMenuItem> items)
+        public RadialMenuSubmenu(string label, Sprite? icon, bool isEnabled, IEnumerable<IRadialMenuItem> items)
         {
             _icon = icon;
             _label = label;
@@ -22,7 +22,7 @@ namespace SharedProject.SharedSource.RadialMenuItems
                 DebugConsole.ThrowError("Amount of items that can be displayed at once is capped at 10");
         }
 
-        public Sprite Icon
+        public Sprite? Icon
         {
             get => _icon;
             set

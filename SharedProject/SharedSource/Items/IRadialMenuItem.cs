@@ -1,11 +1,11 @@
 ﻿using Barotrauma;
 using System.ComponentModel;
 
-namespace RadialMenu
+namespace RadialMenu.Items
 {
     public interface IRadialMenuItem : INotifyPropertyChanged
     {
-        Sprite Icon { get; set; }
+        Sprite? Icon { get; set; }
         string Label { get; set; }
         bool IsEnable { get; set; }
     }

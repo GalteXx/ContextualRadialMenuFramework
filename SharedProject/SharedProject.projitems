@@ -9,14 +9,16 @@
     <Import_RootNamespace>SharedProject</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)SharedSource\CommandsHandler.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SharedSource\PlayerInputHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SharedSource\RadialMenuDrawer.cs" />
     <Compile Include="..\SharedProject\SharedSource\Context\ItemSelectedEventArgs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SharedSource\Context\RadialMenuContext.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SharedSource\Context\RadialMenuContextManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SharedSource\RadialMenu.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)SharedSource\RadialMenuItems\IRadialMenuItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SharedSource\Items\IRadialMenuItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SharedSource\Plugin.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)SharedSource\RadialMenuItems\RadialMenuItem.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)SharedSource\RadialMenuItems\RadialMenuSubmenu.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SharedSource\Items\RadialMenuItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SharedSource\Items\RadialMenuSubmenu.cs" />
   </ItemGroup>
 </Project>
