@@ -2,8 +2,10 @@
 
 using System.Runtime.CompilerServices;
 using SharedProject.SharedSource;
+using Microsoft.Xna.Framework;
 [assembly: IgnoresAccessChecksTo("Barotrauma")]
 [assembly: IgnoresAccessChecksTo("DedicatedServer")]
+[assembly:IgnoresAccessChecksTo("Microsoft.Xna.Framework")]
 [assembly: IgnoresAccessChecksTo("BarotraumaCore")]
 
 namespace RadialMenu
@@ -21,6 +23,7 @@ namespace RadialMenu
             DebugConsole.NewMessage("CRMF loaded");
             _commandsHandler = new();
             _commandsHandler.RegisterCommands();
+            var gi = GameMain.Instance;
             // After all plugins have loaded
             // Put code that interacts with other plugins here.
 

@@ -1,5 +1,6 @@
 ﻿using Barotrauma;
 using RadialMenu.Items;
+using RadialMenu.View;
 
 namespace RadialMenu
 {
@@ -21,6 +22,7 @@ namespace RadialMenu
 
         private void DrawMenuDebug(string[] commandArgs)
         {
+            DebugConsole.NewMessage("Drawing menu");
             var elementsAmount = Convert.ToInt16(commandArgs[0]);
             bool drawSubmenu = !(commandArgs.Length < 2 || commandArgs[1] == "false");
 
@@ -32,6 +34,7 @@ namespace RadialMenu
                 else
                     elements.Add(new RadialMenuItem("", null, i % 2 == 0));
             }
+            DebugConsole.NewMessage($"{elements.Count} elements");
             _drawer.DrawMenu(elements);
         }
 
